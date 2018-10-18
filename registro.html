@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style_menu_main.css">
+		<title>labDevices</title>
+		<meta charset="UTF-8">
+  		<meta name="descripción" content="Registro para recibir notificaciones">
+ 		<meta name="keywords" content="HTML,CSS">
+      	<meta name="autor" content="Perla Arroyos">
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+
+		<header><h1 id="namepagina"><i>labDevices</i></h1></header>
+		<hr>
+		<nav>
+			<ul>
+				<li><a class="nav-item nav-link" href="index.html">Inicio</a></li>
+				<li><a class="nav-item nav-link" href="#">Registro</a></li>
+				<li><a class="nav-item nav-link" href="categoria.html">Categoría</a></li>
+				<li><a class="nav-item nav-link" href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<header><h3 style="text-align:center"><i>Si deseas mas noticias suscribete y recibe nuetras notificaciones a tu correo!</i></h3></header>
+
+		<section>
+			<form style="margin:20px" action="" target="_self" method="post">
+				<fieldset>
+					<legend><h4><i>Registro</i></h4></legend>
+					Nombre de usuario
+					<br>
+					<input type="text" name="nombre" value="" maxlength="10" placeholder="username" required>
+					<br><br>
+					Sexo
+					<br>
+					<input type="radio" name="sexo" value="femenino"><i>Femenino</i></input>
+					<br>
+					<input type="radio" name="sexo" value="masculino"><i>Masculino</i></input>
+					<br>
+					<input type="radio" name="sexo" value="otro" checked><i>Otro</i></input>
+					<br><br>
+					Fecha de nacimiento
+					<br>
+					<input type="date" name="fechanacimiento" required></input>
+					<br><br>
+					Correo electrónico
+					<br>
+					<input type="email" formaction="" name="email" value="" maxlength="40" placeholder="username@example.com" required>
+					<br><br>
+					<input type="submit" value="Enviar"></input>
+					<input type="reset">
+				</fieldset>
+			</form>
+		</section>
+		<br>
+
+		<section>
+			<form style="margin:20px" action="" target="_self" method="post">
+				<fieldset>
+					<legend><h4>Dejanos un comentario o Sugerencia en la cajita de abajo &#8595</h4></legend>
+					<textarea name="massage" rows="3" cols="50" maxlength="150" placeholder="Ingrese aquí el texto" required></textarea>
+					<br>
+					<input type="submit" value="Enviar"></input>
+					<input type="reset">
+				</fieldset>
+			</form>
+		</section>
+
+		<footer>
+			<pre>Autor:
+			Perla María Arroyos Ramírez.
+			</pre>
+			<pre>Contacto:
+			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
+			</pre>
+		</footer>
+		
+	</body>
+</html>
