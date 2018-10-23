@@ -2,8 +2,9 @@
 <html lang="es">
 	<head>
 		
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="style_menu_main.css">
+		<link rel="stylesheet"  type="text/css" href="css/style.css">
+		<link rel="stylesheet"  type="text/css" href="css/style_menu_main.css">
+		<link rel="stylesheet"  type="text/css" href="css/layout.css">
 		<title>labDevices</title>
 		<meta charset="UTF-8">
   		<meta name="descripción" content="Noticias de dispositivos electrónicos">
@@ -15,36 +16,32 @@
 		
 	<body>
 
-	<header><h1 id="namepagina"><i>labDevices</i></h1></header>
+		<header><h1 id="namepagina"><i>labDevices</i></h1></header>
 		<hr>
 		<nav>
-			<ul>
-				<li><a class="nav-item nav-link" href="#">Inicio</a></li>
-				<li><a class="nav-item nav-link" href="registro.html">Registro</a></li>
-				<li><a class="nav-item nav-link" href="categoria.html">Categoría</a></li>
-				<li><a class="nav-item nav-link" href="contacto.html">Contacto</a></li>
+			<ul id="menu">
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="#">Inicio</a></li>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="registro.html">Registro</a></li>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="categoria.html">Categoría</a></li>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
 
 		<section style="margin:20px">
-			<articlie>
+			<article>
 				<h3 id="lema"><i>Todos los días la innovación tecnológica nos sorprende</i></h3>
 				<h4>El equipo de Business Science e Insights de MediaCom Argentina realizó este estudio a través de su herramienta Pulse</h4>
-				<a href="noticia_main.html" target="_blank">Ir a al post completo.</a>
+				<a href="noticia_main.html" target="_self">Ir a al post completo.</a>
 				<br>
 				<br>
-				<img src="images/devices.jpg" alt="logopágina" style="width:430px;height:320px;"/>
+				<img src="images/devices.jpg" alt="logopágina" style="max-width:100%;height:auto;"/>
 			</article>
 	
 			<article>
 				<h3 class="titulos">Recomendación de la semana.<h3>
 				<p style="font-size:80%">Una parte importante de los dispositivos es el reciclaje de los mismos, cuidar nuestro planeta y hacernos responsables de nuestros bienes materiales.</p>
-				<video width="400" controls>
-				  <source src="videos/videoplayback.mp4" type="video/mp4">
-				  <source src="videos/videoplayback.ogg" type="video/ogg">
-				  Tu vavegador no soporta videos.
-				</video>
-			 	
+				<iframe width="500" height="300" src="https://www.youtube.com/embed/PFl44fBRi2w"></iframe>
+			
 			 	<h4><i>Organización en México que recicla dispositivos electrónicos:</i></h4>
 				<a href="http://www.reciclaelectronicos.com/" target="_blank">http://www.reciclaelectronicos.com/</a>
 
@@ -54,7 +51,7 @@
 
 		<aside><h4><bold>Noticias cada semana</bold></h4></aside>
 
-		<footer style="margin:20px">
+		<footer>
 			<pre>Autor:
 			Perla María Arroyos Ramírez.
 			</pre>
