@@ -8,6 +8,7 @@ body{
 	color:rgb(0,90,156);
 	font-family:times;
 	text-align:center;
+	text-shadow: 2px 2px gray;
 }
 #lema{
 	color:rgb(0,90,176);
