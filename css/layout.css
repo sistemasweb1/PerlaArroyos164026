@@ -1,4 +1,4 @@
-/*@charset "UTF-8";
+@charset "UTF-8";
 
 .section{
   float:left;
@@ -19,16 +19,9 @@
 .footer{
 	text-align:center;
 	padding: 20px;
-	margin-top:7px;
+	margin-top:100px;
 	background-color: #777;
 
 }
 
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  /*.section, .footer, .right {
-    width:100%;
-  }
-}
 
-*/

@@ -25,17 +25,34 @@ body{
 <!--tabla-->
 
 table {
-	font-family: arial;
 	border-collapse: collapse;
+    width: 100%;
 	
 }
 td, th{
-	border: 1px solid rgb(17,17,17);
-	text-align: left;
-	padding: 10px;
+	padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(230,230,230);
 }
 
 tr:nth-child(even){
 	background-color: rgb(255,255,255);
+}
+
+p{
+	font-family: times;
+	text-align: justify;
+	text-indent: 30px;
+	letter-spacing: 1px;
+	line-height: 1;
+	word-spacing: 1px;
+	font-family: "Times New Roman", Times ,serif;
+	font-style: italic;
+	font-size: .9375em;
+	font-weight: lighter;
+}
+
+.textlist{
+	
 }
 
