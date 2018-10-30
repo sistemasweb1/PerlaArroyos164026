@@ -1,0 +1,29 @@
+@charset "UTF-8";
+<!--tabla-->
+
+table {
+	border-collapse: collapse;
+
+    width: 100%;
+	
+}
+td, th{
+	padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgb(0,0,0);
+    border-spacing: 1px;
+    cursor:pointer;
+}
+
+td a, th a{
+	display: block;
+	text-decoration:none;
+}
+
+tr:nth-child(even){
+	background-color: rgb(255,255,255);
+}
+
+tr:hover{
+	background-color: rgb(150,150,150);
+}

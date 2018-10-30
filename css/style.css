@@ -22,29 +22,6 @@ body{
 	text-align:center;
 }
 
-<!--tabla-->
-
-table {
-	border-collapse: collapse;
-    width: 100%;
-	
-}
-td, th{
-	padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid rgb(0,0,0);
-    border-spacing: 1px;
-    cursor:pointer;
-}
-
-tr:nth-child(even){
-	background-color: rgb(255,255,255);
-}
-
-tr:hover{
-	background-color: rgb(150,150,150);
-}
-
 p{
 	font-family: times;
 	text-align: justify;
@@ -56,10 +33,6 @@ p{
 	font-style: italic;
 	font-size: .9375em;
 	font-weight: lighter;
-}
-
-.textlist{
-	
 }
 
 #sticky{
