@@ -26,9 +26,9 @@
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
-		<img class="icon" style="top:200px;" src="images/facebook.png">
-		<img class="icon" style="top:250px;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;" src="images/instagram.png">
+		<img class="icon" style="top:200px;cursor:pointer;" src="images/facebook.png">
+		<img class="icon" style="top:250px;cursor:pointer;" src="images/gorjeo.png">
+		<img class="icon" style="top:300px;cursor:pointer;" src="images/instagram.png">
 
 		<i class="fa fa-cloud" style="font-size:48px;color:red;"></i> <a href="categoria.html" target="_self" style="text-decoration:none"><i>Regresar a categorias</i></a>
 		<section style="margin:20px">
@@ -55,7 +55,13 @@
 			<pre>Contacto:
 			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
 			</pre>
+			<pre id = "fecha"></pre>
 		</footer>
+
+		<script>
+		var d = new Date();
+		document.getElementById("fecha").innerHTML = d;
+		</script>
 		
 	</body>
 </html>

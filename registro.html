@@ -26,9 +26,9 @@
 			</ul>
 		</nav>
 
-		<img class="icon" style="top:200px;" src="images/facebook.png">
-		<img class="icon" style="top:250px;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;" src="images/instagram.png">
+		<img class="icon" style="top:200px;cursor:pointer;" src="images/facebook.png">
+		<img class="icon" style="top:250px;cursor:pointer;" src="images/gorjeo.png">
+		<img class="icon" style="top:300px;cursor:pointer;" src="images/instagram.png">
 
 		<header><h3 style="text-align:center"><i>Si deseas mas noticias suscribete y recibe nuetras notificaciones a tu correo!</i></h3></header>
 
@@ -42,11 +42,11 @@
 					<br><br>
 					Sexo
 					<br>
-					<input type="radio" name="sexo" value="femenino"><i>Femenino</i></input>
+					<input type="radio" name="sexo" value="femenino" style="cursor:pointer;"><i>Femenino</i></input>
 					<br>
-					<input type="radio" name="sexo" value="masculino"><i>Masculino</i></input>
+					<input type="radio" name="sexo" value="masculino" style="cursor:pointer;"><i>Masculino</i></input>
 					<br>
-					<input type="radio" name="sexo" value="otro" checked><i>Otro</i></input>
+					<input type="radio" name="sexo" value="otro" style="cursor:pointer;" checked><i>Otro</i></input>
 					<br><br>
 					Fecha de nacimiento
 					<br>
@@ -56,8 +56,8 @@
 					<br>
 					<input type="email" formaction="" name="email" value="" maxlength="40" placeholder="username@example.com" required>
 					<br><br>
-					<input type="submit" value="Enviar"></input>
-					<input type="reset">
+					<input type="submit" value="Enviar" style="cursor:pointer;"></input>
+					<input type="reset" style="cursor:pointer;">
 				</fieldset>
 			</form>
 		</section>
@@ -69,8 +69,8 @@
 					<legend><h4>Dejanos un comentario o Sugerencia en la cajita de abajo &#8595</h4></legend>
 					<textarea name="massage" rows="3" cols="50" maxlength="150" placeholder="Ingrese aquí el texto" required></textarea>
 					<br>
-					<input type="submit" value="Enviar"></input>
-					<input type="reset">
+					<input type="submit" value="Enviar" style="cursor:pointer;"></input>
+					<input type="reset" style="cursor:pointer;">
 				</fieldset>
 			</form>
 		</section>
@@ -82,7 +82,13 @@
 			<pre>Contacto:
 			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
 			</pre>
+			<pre id = "fecha"></pre>
 		</footer>
+
+		<script>
+		var d = new Date();
+		document.getElementById("fecha").innerHTML = d;
+		</script>
 		
 	</body>
 </html>

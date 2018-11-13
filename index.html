@@ -29,9 +29,9 @@
 			</ul>
 		</nav>
 
-		<img class="icon" style="top:200px;" src="images/facebook.png">
-		<img class="icon" style="top:250px;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;" src="images/instagram.png">
+		<img class="icon" style="top:200px;cursor:pointer;" src="images/facebook.png" onmouseover="this.style.margin='20px'">
+		<img class="icon" style="top:250px;cursor:pointer;" src="images/gorjeo.png">
+		<img class="icon" style="top:300px;cursor:pointer;" src="images/instagram.png">
 
 
 		<section style="margin:20px" class="section">
@@ -65,7 +65,13 @@
 			<pre>Contacto:
 			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
 			</pre>
+			<pre id = "fecha"></pre>
 		</footer>
+
+		<script>
+		var d = new Date();
+		document.getElementById("fecha").innerHTML = d;
+		</script>
 		
 	</body>
 </html>
