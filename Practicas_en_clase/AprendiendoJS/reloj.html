@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time right now is: </title>
+</head>
+<body>
+<script>
+let d = new Date();
+document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+"</h1>"
+</script>
+
+<script type="text/javascript">
+function hora() {
+ var DateString=(new Date()).toString();
+ self.status=DateString.substring(0,3+DateString.lastIndexOf(':'))+
+ "Cualquier mensaje";
+ setTimeout("hora()",200);}
+hora();
+</script>
+
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
+
+ <a href="javascript:location.href='mailto:?SUBJECT=Te%20sugiero:
+ '+document.title+'&amp;BODY='+escape(location.href);void 0">
+ Sugerir esta página</a>
+
+</body>
+</html>
