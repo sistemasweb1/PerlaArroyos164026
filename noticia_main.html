@@ -5,6 +5,8 @@
 		<link rel="stylesheet"  type="text/css" href="css/style.css">
 		<link rel="stylesheet"  type="text/css" href="css/style_menu_main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="shortcut icon" href="ordenador.ico" type="image/x-icon" />
 		<title>labDevices</title>
 		<meta charset="UTF-8">
   		<meta name="descripción" content="Noticias de dispositivos electrónicos">
@@ -12,31 +14,61 @@
       	<meta name="autor" content="Perla Arroyos">
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      	<script src="JavaScript/javaScript.js"></script>
+
 	</head>
 		
-	<body>
+	<body class="colorPag">
 
-	<header><h1 id="namepagina"><i>labDevices</i></h1></header>
-		<hr>
-		<nav id="sticky">
-			<ul id="menu">
+		<div class="container">
+		
+			<div class="row">
+			<div class="col-12">
+				<header><h1 id="namepagina"><i>labDevices</i></h1></header>
+			</div>
+			</div>
+
+			<div class="row" >
+			<div class="col-12">
+				<hr>
+				<nav>
+				<ul id="menu" id="sticky">
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="index.html">Inicio</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="registro.html">Registro</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="categoria.html">Categoría</a></li>
-				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Acerca de</a></li>
+				</ul>
+				</nav>
+				<hr>
+			</div>
+			</div>
 
-		<img class="icon" style="top:200px;cursor:pointer;" src="images/facebook.png">
-		<img class="icon" style="top:250px;cursor:pointer;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;cursor:pointer;" src="images/instagram.png">
+		<div >
+		<a href="https://www.facebook.com/" target="_blank">
+		<img class="icon tam" style="top:200px;cursor:pointer;" src="images/facebook.png" onmouseover="sobreIcon1()" onmouseout="fueraIcon1()">
+		</a>
+		<a href="https://twitter.com/" target="_blank">
+		<img class="icon tam" style="top:250px;cursor:pointer;" src="images/gorjeo.png" onmouseover="sobreIcon2()" onmouseout="fueraIcon2()">
+		</a>
+		<a href="https://www.instagram.com/" target="_blank">
+		<img class="icon tam" style="top:300px;cursor:pointer;" src="images/instagram.png" onmouseover="sobreIcon3()" onmouseout="fueraIcon3()">
+		</a>
+		</div>
 
-		<i class="fa fa-cloud" style="font-size:48px;color:red;"></i> <a href="index.html" target="_self" style="text-decoration:none"><i>Regresar a inicio</i></a>
-		<section style="margin:20px">
-			<articlie>
+			<div class="row">
+			<div class="col-12">
+				<i class="fa fa-cloud" style="font-size:48px;color:red;"></i> <a href="index.html" target="_self" style="text-decoration:none" id="vinc" onmouseover="sobreVinc1()" onmouseout="fueraVinc1()"><i>Regresar a inicio</i></a>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-8">
+				<section style="margin:20px">
+				<articlie>
 				<h3 style="color:rgb(255,0,0);">El equipo de Business Science e Insights de MediaCom Argentina realizó este estudio a través de su herramienta Pulse</h4>
 				<br>
 				<img src="images/devices.jpg" alt="logopágina" style="max-width:100%;height:auto;"/>
+				<br>
 				<br>
 				<p>El equipo de Business Science e Insights de MediaCom Argentina, liderado por Matías Warlet, Head of Knowledge de MediaCom Argentina y por Martin Curia, Research Insights Director, realizó un estudio sobre la importancia de los Dispositivos Electrónicos. La encuesta fue realizada a partir de un panel online en la Ciudad Autónoma de Buenos Aires y el Gran Buenos Aires. Los resultados de este estudio se lograron gracias a la herramienta Pulse, propietaria de MediaCom.<p/>
 
@@ -54,25 +86,36 @@
 					<li>Los medios digitales son los que más influencia tienen para poder ofrecer una mejor  publicidad del producto, a comparación de los medios masivos, los puntos de venta y los eventos con sponsors.</li>
 				</ul>
 				<p>El estudio contó con 72 encuestas online, cada una con una duración de entre 10 y 15 minutos, y la participación de mujeres y hombres con diferentes rangos de edad: 63%( 20-30 años), 24% (21-40 años), un 8% (41-50 años) y con 6% ( 51y+Años).</p>
-			</article>
-	
-		</section>
-		<br>
+				</article>
+				</section>
+			</div>
 
-		<footer style="margin:20px">
-			<pre>Autor:
-			Perla María Arroyos Ramírez.
-			</pre>
-			<pre>Contacto:
-			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
-			</pre>
-			<pre id = "fecha"></pre>
-		</footer>
+			<div class="col-4">
+				<aside>
+				<h4 id="blink" class="blinkText">Noticias cada semana</h4>
+				<br>
+				<p id="reloj" class="fechaHora"></p>
+				<p id="fecha" class="fechaHora"></p>
+				</aside>
+			</div>
 
-		<script>
-		var d = new Date();
-		document.getElementById("fecha").innerHTML = d;
-		</script>
-		
+			</div>
+
+			<div class"row">
+			<div class"col-12" class="footer">
+				<footer>
+				<hr>
+				<pre>Autor:
+				Perla María Arroyos Ramírez.
+				</pre>
+				<pre>Contacto:
+				<a href="al164026@alumnos.uacj.mx" id="vinc3" onmouseover="sobreVinc3()" onmouseout="fueraVinc3()">al164026@alumnos.uacj.mx</a>
+				</pre>
+				<hr>
+				</footer>
+			</div>
+			</div>
+
+		</div>
 	</body>
 </html>

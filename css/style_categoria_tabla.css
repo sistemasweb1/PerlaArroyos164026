@@ -10,6 +10,7 @@ table {
 td, th{
 	padding: 10px;
 	text-decoration: none;
+	color:rgb(20,20,20);
     text-align: left;
     border-bottom: 1px solid rgb(0,0,0);
     border-spacing: 1px;
@@ -19,23 +20,33 @@ td, th{
 td a, th a{
 	display: block;
 	text-decoration:none;
+	color: rgb(20,20,20);
 }
 
 tr:nth-child(even){
 	background-color: rgb(255,255,255);
 }
-td,th,a:link{
-	color: none;
+tr td th a:link{
+	text-decoration:none;
+	color: rgb(20,20,20);
 }
-td,th,a:visited{
-	color: none;
+tr td th a:visited{
+	text-decoration:none;
+	color: rgb(20,20,20);
 }
-td,th,a:hover{
-	color: none;
+tr td th a:hover{
+	text-decoration:none;
+	color: rgb(20,20,20);
 }
-td,th,a:active{
-	color: none;
+tr td th a:active{
+	text-decoration:none;
+	color: rgb(20,20,20);
 }
 tr:hover{
 	background-color: rgb(150,150,150);
+}
+
+.texto{
+	text-decoration:none;
+	color:rgb(20,20,20);
 }

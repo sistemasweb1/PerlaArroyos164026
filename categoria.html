@@ -5,6 +5,8 @@
 		<link rel="stylesheet"  type="text/css" href="css/style.css">
 		<link rel="stylesheet"  type="text/css" href="css/style_menu_main.css">
 		<link rel="stylesheet"	type="text/css" href="css/style_categoria_tabla.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="shortcut icon" href="ordenador.ico" type="image/x-icon" />
 		<title>labDevices</title>
 		<meta charset="UTF-8">
   		<meta name="descripción" content="Las categorias de dispositivos electrónicos">
@@ -12,63 +14,106 @@
       	<meta name="autor" content="Perla Arroyos">
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      	<script src="JavaScript/javaScript.js"></script>
+
 	</head>
 
-	<body>
-		<header><h1 id="namepagina"><i>labDevices</i></h1><header>
-		<hr>
-		<nav class="sticky">
-			<ul id="menu">
+	<body class="colorPag">
+
+		<div class="container">
+		
+			<div class="row">
+			<div class="col-12">
+				<header><h1 id="namepagina"><i>labDevices</i></h1></header>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-12">
+				<hr>
+				<nav class="sticky">
+				<ul id="menu">
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="index.html">Inicio</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="registro.html">Registro</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="#">Categoría</a></li>
-				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Acerca de</a></li>
+				</ul>
+				</nav>
+				<hr>
+			</div>
+			</div>
 
-		<img class="icon" style="top:200px;cursor:pointer;cursor:pointer;" src="images/facebook.png">
-		<img class="icon" style="top:250px;cursor:pointer;cursor:pointer;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;cursor:pointer;cursor:pointer;" src="images/instagram.png">
-
-		<header><h3 style="text-align:center"><i>Categorias!!</i></h3><header>
-		<hr>
-		<br>
-		<div style="overflow-x:auto;">
-		<table style = "margin: 20px">
-			<tr>
-				<th>Moviles</th>
-			</tr>
-			<tr>
-				<th>Ordenadores</th>
-			</tr>
-			<tr>
-				<th>Reloges inteligentes</th>
-			</tr>
-			<tr>
-				<th><a href="noticia_ordenador.html" target="_self" >Tablets</a></th>
-			</tr>
-			<tr>
-				<th>Wearables</th>
-			</tr>
-			<tr>
-				<th>Realidad virtual/aumentada</th>
-			</tr>
-			<tr>
-				<th>otros dispositivos</th>
-			</tr>
-
-		</table>
+		<div >
+		<a href="https://www.facebook.com/" target="_blank">
+		<img class="icon tam" style="top:200px;cursor:pointer;" src="images/facebook.png" onmouseover="sobreIcon1()" onmouseout="fueraIcon1()">
+		</a>
+		<a href="https://twitter.com/" target="_blank">
+		<img class="icon tam" style="top:250px;cursor:pointer;" src="images/gorjeo.png" onmouseover="sobreIcon2()" onmouseout="fueraIcon2()">
+		</a>
+		<a href="https://www.instagram.com/" target="_blank">
+		<img class="icon tam" style="top:300px;cursor:pointer;" src="images/instagram.png" onmouseover="sobreIcon3()" onmouseout="fueraIcon3()">
+		</a>
 		</div>
 
-		<footer>
-			<pre>Autor:
-			Perla María Arroyos Ramírez.
-			</pre>
-			<pre>Contacto:
-			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
-			</pre>
-			<pre id = "fecha"></pre>
-		</footer>
+			<div class="row">
+			<div class="col-12">
+				<header><h3 style="text-align:center"><i>Categorias!!</i></h3><header>
+			<br>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-8" style="overflow-x:auto;">
+				<table style = "margin: 20px">
+				<tr>
+				<th><a href="noticia_movil.html" target="_self" class="texto" />Moviles</th>
+				</tr>
+				<tr>
+				<th><a href="noticia_ordenador.html" target="_self" class="texto" />Ordenadores</th>
+				</tr>
+				<tr>
+				<th>Reloges inteligentes</th>
+				</tr>
+				<tr>
+				<th><a href="noticia_tablet.html" target="_self" class="texto" />Tablets</th>
+				</tr>
+				<tr>
+				<th>Wearables</th>
+				</tr>
+				<tr>
+				<th>Realidad virtual/aumentada</th>
+				</tr>
+				</table>
+			</div>
+
+			<div class="col-4">
+				<aside>
+				<h4 id="blink" class="blinkText">Noticias cada semana</h4>
+				<br>
+				<p id="reloj" class="fechaHora"></p>
+				<p id="fecha" class="fechaHora"></p>
+				</aside>
+			</div>
+
+			</div>
+
+			<div class="row">
+			<div class="col-12">
+				<hr>
+				<footer>
+				<pre>Autor:
+				Perla María Arroyos Ramírez.
+				</pre>
+				<pre>Contacto:
+				<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
+				</pre>
+				<pre id = "fecha"></pre>
+				</footer>
+				<hr>
+			</div>
+			</div>
+
+		</div>
 
 		<script>
 		var d = new Date();

@@ -4,6 +4,8 @@
 		
 		<link rel="stylesheet"  type="text/css" href="css/style.css">
 		<link rel="stylesheet"  type="text/css" href="css/style_menu_main.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="shortcut icon" href="ordenador.ico" type="image/x-icon" />
 		<title>labDevices</title>
 		<meta charset="UTF-8">
   		<meta name="descripción" content="Registro para recibir notificaciones">
@@ -11,29 +13,56 @@
       	<meta name="autor" content="Perla Arroyos">
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      	<script src="JavaScript/javaScript.js"></script>
+
 	</head>
 
-	<body>
+	<body class="colorPag">
 
-		<header><h1 id="namepagina"><i>labDevices</i></h1></header>
-		<hr>
-		<nav class="sticky">
-			<ul id="menu">
+		<div class="container">
+		
+			<div class="row">
+			<div class="col-12">
+				<header><h1 id="namepagina"><i>labDevices</i></h1></header>
+			</div>
+			</div>
+
+			<div class="row" >
+			<div class="col-12">
+				<hr>
+				<nav>
+				<ul id="menu" id="sticky">
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="index.html">Inicio</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="#">Registro</a></li>
 				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="categoria.html">Categoría</a></li>
-				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+				<li class="opcmenu" class="descmenu"><a class="descmenu" class="nav-item nav-link" href="contacto.html">Acerca de</a></li>
+				</ul>
+				</nav>
+				<hr>
+			</div>
+			</div>
 
-		<img class="icon" style="top:200px;cursor:pointer;" src="images/facebook.png">
-		<img class="icon" style="top:250px;cursor:pointer;" src="images/gorjeo.png">
-		<img class="icon" style="top:300px;cursor:pointer;" src="images/instagram.png">
+		<div >
+		<a href="https://www.facebook.com/" target="_blank">
+		<img class="icon tam" style="top:200px;cursor:pointer;" src="images/facebook.png" onmouseover="sobreIcon1()" onmouseout="fueraIcon1()">
+		</a>
+		<a href="https://twitter.com/" target="_blank">
+		<img class="icon tam" style="top:250px;cursor:pointer;" src="images/gorjeo.png" onmouseover="sobreIcon2()" onmouseout="fueraIcon2()">
+		</a>
+		<a href="https://www.instagram.com/" target="_blank">
+		<img class="icon tam" style="top:300px;cursor:pointer;" src="images/instagram.png" onmouseover="sobreIcon3()" onmouseout="fueraIcon3()">
+		</a>
+		</div>
+			<div class="row">
+			<div class="col-12">
+				<h3 style="text-align:center"><i>Si deseas mas noticias suscribete y recibe nuetras notificaciones a tu correo!</i></h3>
+			</div>
+			</div>
 
-		<header><h3 style="text-align:center"><i>Si deseas mas noticias suscribete y recibe nuetras notificaciones a tu correo!</i></h3></header>
-
-		<section>
-			<form style="margin:20px" action="" target="_self" method="post">
+			<div class="row">
+			<div class="col-8">
+				<section>
+				<form style="margin:20px" action="" target="_self" method="post">
 				<fieldset>
 					<legend><h4><i>Registro</i></h4></legend>
 					Nombre de usuario
@@ -56,39 +85,54 @@
 					<br>
 					<input type="email" formaction="" name="email" value="" maxlength="40" placeholder="username@example.com" required>
 					<br><br>
-					<input type="submit" value="Enviar" style="cursor:pointer;"></input>
-					<input type="reset" style="cursor:pointer;">
+					<input type="submit" value="Enviar" style="cursor:pointer;" ></input>
+					<!--onclick="javascript:alert('Usuario Registrado');"-->
+					<input type="reset" style="cursor:pointer;"></input>
 				</fieldset>
-			</form>
-		</section>
-		<br>
+				</form>
+				</section>
+				<br>
 
-		<section>
-			<form style="margin:20px" action="" target="_self" method="post">
+				<section>
+				<form style="margin:20px" action="" target="_self" method="post">
 				<fieldset>
 					<legend><h4>Dejanos un comentario o Sugerencia en la cajita de abajo &#8595</h4></legend>
 					<textarea name="massage" rows="3" cols="50" maxlength="150" placeholder="Ingrese aquí el texto" required></textarea>
 					<br>
-					<input type="submit" value="Enviar" style="cursor:pointer;"></input>
-					<input type="reset" style="cursor:pointer;">
+					<input type="submit" value="Enviar" style="cursor:pointer;" ></input>
+					<input type="reset" style="cursor:pointer;" >
 				</fieldset>
-			</form>
-		</section>
+				</form>
+				</section>
+			</div>
 
-		<footer>
-			<pre>Autor:
-			Perla María Arroyos Ramírez.
-			</pre>
-			<pre>Contacto:
-			<a href="al164026@alumnos.uacj.mx">al164026@alumnos.uacj.mx</a>
-			</pre>
-			<pre id = "fecha"></pre>
-		</footer>
+			<div class="col-4">
+				<aside>
+				<h4 id="blink" class="blinkText">Noticias cada semana</h4>
+				<br>
+				<p id="reloj" class="fechaHora"></p>
+				<p id="fecha" class="fechaHora"></p>
+				</aside>
+			</div>
 
-		<script>
-		var d = new Date();
-		document.getElementById("fecha").innerHTML = d;
-		</script>
-		
+
+			</div>
+
+			<div class"row">
+			<div class"col-12" class="footer">
+				<footer>
+				<hr>
+				<pre>Autor:
+				Perla María Arroyos Ramírez.
+				</pre>
+				<pre>Contacto:
+				<a href="al164026@alumnos.uacj.mx" id="vinc3" onmouseover="sobreVinc3()" onmouseout="fueraVinc3()">al164026@alumnos.uacj.mx</a>
+				</pre>
+				<hr>
+				</footer>
+			</div>
+			</div>
+
+		</div>
 	</body>
 </html>
